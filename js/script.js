@@ -1,10 +1,10 @@
 let focusText = document.getElementById("focusText");
 let focusDiv = document.getElementById("invisibleContainer");
 
-focusText.addEventListener("mousedown", function() {
+focusText.addEventListener("focus", function() {
     focusDiv.style.display = "block";
 });
 
-focusText.addEventListener("mouseup", function() {
+focusText.addEventListener("blur", function() {
     focusDiv.style.display = "none";
 });
